@@ -1,0 +1,8 @@
+[environments.default]
+url = "jdbc:postgresql://localhost:5432/db_sigebio"
+user = "postgres"
+password = "1234567890"
+schemas = ["public"]
+
+[flyway]
+locations = ["filesystem:sql", "filesystem:repeatable"]
