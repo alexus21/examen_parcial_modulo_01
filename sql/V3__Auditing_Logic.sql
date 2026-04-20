@@ -15,7 +15,7 @@ BEGIN
         RAISE EXCEPTION 'Acceso denegado: Laboratorios Nivel 4 exclusivos para Directores.';
     END IF;
 
-    IF v_estado_equipo != 'Disponible' THEN
+    IF v_estado_equipo != 'disponible' THEN
         RAISE EXCEPTION 'Reserva fallida: El equipo se encuentra en %', v_estado_equipo;
     END IF;
 
